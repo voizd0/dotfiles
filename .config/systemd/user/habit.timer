@@ -1,0 +1,11 @@
+[Unit]
+Description=Run habit service
+After=multi-user.target
+
+[Timer]
+OnCalendar=12:00:00
+OnCalendar=7:00:00
+Unit=habit.service
+
+[Install]
+WantedBy=multi-user.target
